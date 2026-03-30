@@ -1,4 +1,4 @@
-# 🏦 RegimeDetector: Institutional-Grade Quant Pipeline
+# RegimeDetector: Institutional-Grade Quant Pipeline
 [![Python 3.12+](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/downloads/)
 [![ML-Engine](https://img.shields.io/badge/ML--Engine-XGBoost%20%7C%20HMM-green)](https://github.com/microsoft/LightGBM)
 [![Data-Stack](https://img.shields.io/badge/Data-Polars%20%7C%20Alpaca-orange)](https://pola.rs/)
@@ -7,7 +7,7 @@ An end-to-end autonomous quantitative research and execution pipeline. This syst
 
 ---
 
-## 🛰️ System Architecture & Flow
+## System Architecture & Flow
 The pipeline is designed with a **decoupled, modular architecture** to ensure high availability and low latency during live market hours.
 
 ```mermaid
@@ -35,8 +35,7 @@ graph TD
         I --> J2[Telegram Bot @Analyze]
     end
 ```
-🛠️ Technical Implementation
-🧠 Core Modeling Logic
+## Technical Implementation
 
 Unsupervised HMM (Hidden Markov Model): Used to identify latent market states (Volatility vs. Return clusters) without human labeling bias.
 
@@ -50,12 +49,11 @@ Volatility Scaling: 5-day realized volatility normalized against macro regimes.
 
 Momentum Deceleration: Multi-timeframe RSI and momentum divergence.
 
-🤖 LLM Strategy Synthesis
+## LLM Strategy Synthesis
 
 The system utilizes a local Qwen3:14B model via Ollama to perform "Signal Synthesis." It translates raw SHAP values and quant metrics into actionable institutional briefings, reducing the cognitive load for the trader.
 
-📊 Live Monitoring & Interfaces
-📱 Interactive Telegram Bot
+## Interactive Telegram Bot
 
 The bot acts as a remote command center. Users can trigger the full pipeline via /analyze.
 
@@ -63,7 +61,7 @@ Asynchronous Execution: Uses asyncio.to_thread to prevent blocking the bot while
 
 HTML Formatting: Robust reporting that escapes technical characters to ensure clean delivery.
 
-📈 Institutional Dashboard
+## Institutional Dashboard
 
 A real-time Streamlit interface providing:
 
@@ -73,6 +71,6 @@ SHAP Impact: Visualizing which features (e.g., Yield Spread vs. RSI) are current
 
 Confidence Gauges: Real-time probability distributions for Bull/Bear/Neutral states.
 
-⚖️ Intellectual Property Note
+## Intellectual Property Note
 Note: The specific mathematical weights, HMM transition matrices, and hyperparameter configurations are excluded from this public release to protect proprietary trading logic.
 
