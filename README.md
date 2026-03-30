@@ -1,10 +1,11 @@
 # RegimeDetector: Institutional-Grade Quant Pipeline
-[![Python 3.12+](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/downloads/)
-[![ML-Engine](https://img.shields.io/badge/ML--Engine-XGBoost%20%7C%20HMM-green)](https://github.com/microsoft/LightGBM)
-[![Data-Stack](https://img.shields.io/badge/Data-Polars%20%7C%20Alpaca-orange)](https://pola.rs/)
 
-An end-to-end autonomous quantitative research and execution pipeline. This system synchronizes live market data, macro-economic indicators, and an ensemble ML architecture to detect and forecast market regimes (Bearish, Neutral, Bullish).
+End-to-end market regime detection pipeline that combines macro data, technical indicators, HMM-based latent state discovery, XGBoost forecasting, and SHAP explanations to classify the next-day market regime as Bearish, Neutral, or Bullish.
 
+## TL;DR
+- Detects latent market states from live and macro data.
+- Forecasts next-day regime probabilities using engineered features.
+- Delivers interpretable outputs through a Streamlit dashboard and Telegram bot.
 ---
 
 ## System Architecture & Flow
