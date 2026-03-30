@@ -75,3 +75,9 @@ Confidence Gauges: Real-time probability distributions for Bull/Bear/Neutral sta
 ## Intellectual Property Note
 Note: The specific mathematical weights, HMM transition matrices, and hyperparameter configurations are excluded from this public release to protect proprietary trading logic.
 
+## License
+
+All rights are reserved. No license is granted to use, modify, distribute, sublicense, or commercialize the code in this repository without explicit written permission from the author.
+
+Certain proprietary components, model configurations, and trading logic are intentionally omitted from the public version.
+
