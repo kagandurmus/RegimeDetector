@@ -1,0 +1,13 @@
+# Models (The actual core logic)
+data/processed/*.pkl
+data/processed/*.joblib
+
+# Data (Market data and logs)
+data/raw/
+data/processed/*.parquet
+logs/
+
+# Secrets
+.env
+
+__pycache__/
